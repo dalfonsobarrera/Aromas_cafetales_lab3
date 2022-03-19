@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Aromas_cafetales_lab3</string>
+    <string name="movie_title">Titulo de la película</string>
+    <string name="release_date_label">Release date:</string>
+    <string name="release_date_example">30-nov-2020</string>
+    <string name="vote_average_example">10</string>
+    <string name="vote_average_label">Vote average:</string>
 </resources>
