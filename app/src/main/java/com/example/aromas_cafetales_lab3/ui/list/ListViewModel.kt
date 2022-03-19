@@ -1,8 +1,9 @@
 package com.example.aromas_cafetales_lab3.ui.list
 
-import android.graphics.Movie
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.aromas_cafetales_lab3.server.model.Movie
 import com.example.aromas_cafetales_lab3.server.moviesrepository.MoviesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

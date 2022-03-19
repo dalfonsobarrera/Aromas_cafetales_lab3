@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aromas_cafetales_lab3.R
 import com.example.aromas_cafetales_lab3.databinding.CardViewItemMovieBinding
+import com.example.aromas_cafetales_lab3.server.model.Movie
 
 class MoviesAdapter(
     private val moviesList: ArrayList<Movie>,

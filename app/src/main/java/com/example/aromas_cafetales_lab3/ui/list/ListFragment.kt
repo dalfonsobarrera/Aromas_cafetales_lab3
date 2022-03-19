@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aromas_cafetales_lab3.databinding.FragmentListBinding
+import com.example.aromas_cafetales_lab3.server.model.Movie
 
 class ListFragment : Fragment() {
 
@@ -18,7 +19,7 @@ class ListFragment : Fragment() {
     private lateinit var listViewModel: ListViewModel
     private lateinit var listBanding: FragmentListBinding
     private lateinit var moviesAdapter: MoviesAdapter
-    private var movieList: ArrayList<movie> = ArrayList()
+    private var movieList: ArrayList<Movie> = ArrayList()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         listBanding = FragmentListBinding.inflate(inflater, container, false)
