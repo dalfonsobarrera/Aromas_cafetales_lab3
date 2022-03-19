@@ -1,4 +1,4 @@
-package com.example.aromas_cafetales_lab3.list
+package com.example.aromas_cafetales_lab3.ui.detail
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.aromas_cafetales_lab3.R
 
-class ListFragment : Fragment() {
+class DetailFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ListFragment()
+        fun newInstance() = DetailFragment()
     }
 
-    private lateinit var viewModel: ListViewModel
+    private lateinit var viewModel: DetailViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ListViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(DetailViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

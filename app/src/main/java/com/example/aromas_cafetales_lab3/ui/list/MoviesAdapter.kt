@@ -1,9 +1,8 @@
-package com.example.aromas_cafetales_lab3.list
+package com.example.aromas_cafetales_lab3.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aromas_cafetales_lab3.R
 import com.example.aromas_cafetales_lab3.databinding.CardViewItemMovieBinding
@@ -12,7 +11,6 @@ class MoviesAdapter(
     private val moviesList: ArrayList<Movie>,
     private val onItemClicked: (Movie) -> Unit
 ) : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> (){
-
 
     override fun onCreateViewHolder( parent: ViewGroup, viewType: Int ): MoviesAdapter.MovieViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.card_view_item_movie, parent, false)

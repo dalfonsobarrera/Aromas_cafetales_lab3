@@ -1,4 +1,4 @@
-package com.example.aromas_cafetales_lab3.main
+package com.example.aromas_cafetales_lab3.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

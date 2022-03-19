@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aromas_cafetales_lab3">
         <activity
-            android:name=".main.MainActivity"
+            android:name="com.example.aromas_cafetales_lab3.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
