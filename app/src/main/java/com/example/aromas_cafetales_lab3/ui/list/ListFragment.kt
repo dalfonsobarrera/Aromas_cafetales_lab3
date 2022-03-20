@@ -45,6 +45,4 @@ class ListFragment : Fragment() {
 
 
     }
-    //lñdsfgdflkghñlkfd
-
 }
