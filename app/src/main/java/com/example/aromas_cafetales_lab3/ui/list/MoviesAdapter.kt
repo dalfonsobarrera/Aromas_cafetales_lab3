@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.aromas_cafetales_lab3.R
 import com.example.aromas_cafetales_lab3.databinding.CardViewItemMovieBinding
 import com.example.aromas_cafetales_lab3.server.model.Movie
+import com.squareup.picasso.Picasso
 
 class MoviesAdapter(
     private val moviesList: ArrayList<Movie>,
@@ -18,9 +19,12 @@ class MoviesAdapter(
         return MovieViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: MoviesAdapter.MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = moviesList[position]
         holder.bindMovie(movie)
+        holder.itemView.setOnClickListener{
+            onItemClicked(moviesList[position])
+        }
     }
 
     override fun getItemCount(): Int = moviesList.size
@@ -35,7 +39,12 @@ class MoviesAdapter(
         private val binding = CardViewItemMovieBinding.bind(itemView)
 
         fun bindMovie(movie: Movie){
-
+            with(binding){
+                movieTitleTextView.text = movie.title
+                releaseDateTextView.text = movie.releaseDate
+                voteAverageTextView.text = movie.voteAverage.toString()
+                Picasso.get().load("https://image.tmdb.org/t/p/w500"+movie.posterPath).into(posterImageView)
+            }
         }
 
     }

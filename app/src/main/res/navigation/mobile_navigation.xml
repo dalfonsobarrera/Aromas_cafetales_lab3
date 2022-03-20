@@ -18,5 +18,9 @@
         android:id="@+id/detailFragment"
         android:name="com.example.aromas_cafetales_lab3.ui.detail.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="movie"
+            app:argType="com.example.aromas_cafetales_lab3.server.model.Movie" />
+    </fragment>
 </navigation>
