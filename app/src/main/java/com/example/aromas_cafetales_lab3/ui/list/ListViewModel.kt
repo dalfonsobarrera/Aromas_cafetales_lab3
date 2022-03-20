@@ -13,14 +13,13 @@ import kotlinx.coroutines.launch
 class ListViewModel : ViewModel() {
 
     private val moviesRepository = MoviesRepository()
-
     private val loadMovies : MutableLiveData<ArrayList<Movie>> = MutableLiveData()
     val loadMoviesDone : LiveData<ArrayList<Movie>> = loadMovies
 
     fun getMovies() {
         GlobalScope.launch(Dispatchers.IO){
             val moviesList: MoviesList = moviesRepository.getMovies()
-            loadMovies.postValue ( moviesList.moviesList as ArrayList<Movie> )
+            loadMovies.postValue ( moviesList.moviesList as ArrayList<Movie>)
         }
     }
 

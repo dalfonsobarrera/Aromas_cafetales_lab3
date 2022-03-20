@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
-import com.example.aromas_cafetales_lab3.R
 import com.example.aromas_cafetales_lab3.databinding.FragmentDetailBinding
 import com.example.aromas_cafetales_lab3.server.model.Movie
 import com.squareup.picasso.Picasso
